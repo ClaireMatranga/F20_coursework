@@ -14,3 +14,7 @@ def test_find_y((x1, y2), (x2, y2), x3, expected_y3):
 def test_find_m((x1, y1), (x2, y2), expected_m):
     answer = find_slope((x1, y1), (x2, y2))
     assert answer == expected_m
+
+def test_find_y_3((x1, y1), expected_m, x3):
+    answer = find_y_3((x1, y1), expected_m, x3)
+    assert answer == expected_y3
